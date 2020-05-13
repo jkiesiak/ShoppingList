@@ -17,7 +17,7 @@ public class MyDataBaseClass extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 2;
 
     public static final String TABLE_NAME = "groceryList";
-    //    public static final String COLUMN_ID = "id";
+
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_AMOUNT = "amount";
     public static final String COLUMN_FROM_ANOTHER_TAB = "NameOfList";
@@ -59,16 +59,7 @@ public class MyDataBaseClass extends SQLiteOpenHelper {
         }
 
     }
-//    public void onCreate(SQLiteDatabase db) {
-//        try{
-//            db.execSQL(SQL_CREATE_GROCERYLIST_TABLE);
-//            Toast.makeText(context, "Created db", Toast.LENGTH_LONG).show();
-//        }
-//        catch (Exception e){
-//            Toast.makeText(context, "errore Created db", Toast.LENGTH_LONG).show();
-//        }
-//
-//    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 

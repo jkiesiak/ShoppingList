@@ -31,18 +31,6 @@ public class DeleteList extends AppCompatActivity {
         selectedName = receivedIntent.getStringExtra("list");
         editable_item.setText(selectedName);
 
-//        btnSave.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String item = editable_item.getText().toString();
-//                if (!item.equals("")) {
-//                    mDatabase.updateName(item, selectedID, selectedName);
-//                } else {
-////                    toastMessage("You must enter a name");
-//                    Toast.makeText(DeleteIngriedient.this, "No ID associated with that name", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,17 +40,6 @@ public class DeleteList extends AppCompatActivity {
                 Toast.makeText(DeleteList.this, "Deleted list: " + selectedName, Toast.LENGTH_SHORT).show();
             }
         });
-
-
-//    public void deleteIngriedient() {
-//        try {
-//            mDatabase.deleteName(selectedID, selectedName);
-//            editable_item.setText("");
-//            Toast.makeText(DeleteIngriedient.this, "No ID associated with that name", Toast.LENGTH_SHORT).show();
-//        } catch (Exception e) {
-//            Toast.makeText(DeleteIngriedient.this, "exeption class DeleteIngriedient" + e.getMessage(), Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
 
     }

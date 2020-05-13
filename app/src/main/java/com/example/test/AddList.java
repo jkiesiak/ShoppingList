@@ -85,30 +85,7 @@ public class AddList extends AppCompatActivity {
         Intent intent4 = new Intent(AddList.this, ListViewLists.class);
         startActivity(intent4);
     }
-    ///////////////////////////////////////// koment tej funkcjonalnosci
-//    public void showListFromDatabase(View view) {
-//        try {
-//            SQLiteDatabase objSqLiteDatabase = objMyDataBaseClass.getWritableDatabase();
-//            if (objSqLiteDatabase != null) {
-//                Cursor objCursor = objSqLiteDatabase.rawQuery("select * from ListOfLists order by COLUMN_ID", null);
-//                StringBuffer stringBuffer = new StringBuffer();
-//                if (objCursor.getCount() == 0) {
-//                    Toast.makeText(this, "no data in table lists", Toast.LENGTH_LONG).show();
-//                } else {
-//                    while (objCursor.moveToNext()) {
-//                        stringBuffer.append("ID: " + objCursor.getInt(0)+ "     ");
-//                        stringBuffer.append("Name:" + objCursor.getString(1) + "   ");
-//                        stringBuffer.append("Type:" + objCursor.getString(2) + "\n");
-//                    }
-//                    insertedLists.setText(stringBuffer);
-//                }
-//            } else {
-//                Toast.makeText(this, "database/list is null", Toast.LENGTH_LONG).show();
-//            }
-//        } catch (Exception e) {
-//            Toast.makeText(this, "exeption showing db/list" + e.getMessage(), Toast.LENGTH_LONG).show();
-//        }
-//    }
+
 
     private void addIngriedientsToList() {
         Intent intent = new Intent(AddList.this, AddIngriedients.class);

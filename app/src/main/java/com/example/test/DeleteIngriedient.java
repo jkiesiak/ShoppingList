@@ -26,31 +26,10 @@ public class DeleteIngriedient extends AppCompatActivity {
         btnDelete = (Button) findViewById(R.id.btnDelete);
         editable_item = (EditText) findViewById(R.id.editable_item);
         mDatabase = new MyDataBaseClass(this);
-
-        //get the intent extra from the ListDataActivity
         Intent receivedIntent = getIntent();
-
-        //now get the itemID we passed as an extra
         selectedID = receivedIntent.getIntExtra("id", -1); //NOTE: -1 is just the default value
-
-        //now get the name we passed as an extra
         selectedName = receivedIntent.getStringExtra("name");
-
-        //set the text to show the current selected name
         editable_item.setText(selectedName);
-
-//        btnSave.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String item = editable_item.getText().toString();
-//                if (!item.equals("")) {
-//                    mDatabase.updateName(item, selectedID, selectedName);
-//                } else {
-////                    toastMessage("You must enter a name");
-//                    Toast.makeText(DeleteIngriedient.this, "No ID associated with that name", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,16 +45,6 @@ public class DeleteIngriedient extends AppCompatActivity {
         });
 
     }
-
-//    public void deleteIngriedient() {
-//        try {
-//            mDatabase.deleteName(selectedID, selectedName);
-//            editable_item.setText("");
-//            Toast.makeText(DeleteIngriedient.this, "No ID associated with that name", Toast.LENGTH_SHORT).show();
-//        } catch (Exception e) {
-//            Toast.makeText(DeleteIngriedient.this, "exeption class DeleteIngriedient" + e.getMessage(), Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
 
 }
