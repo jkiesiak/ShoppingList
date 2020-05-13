@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Shopping List!</string>
+
+    <string name="welcome">Welcome, this is my shopping list application!</string>
+    <string name="create_list">Create your own list</string>
+    <string name="generate_list">Generate your list</string>
+
+    <string name="create_db">Create your database of lists</string>
+    <string name="add_to_db">Add list to database</string>
+    <string name="show_from_db">See available lists</string>
+    <string name="name_of_list">Please, write name of your list</string>
+    <string name="polecenie">Plese, write below name and type of your list</string>
+    <string name="next">Add ingriedients to list</string>
+    <string name="list_type">Type:breakfast/lunch/dinner</string>
+
+    <string name="pick_a_name_of_list">please, pick name of list</string>
+
+    <string name="polecenie_ing">Please, pick name of list, then add ingriedients</string>
+    <string name="ingriedient">Write name of your ingriedient</string>
+    <string name="amount">Write amount</string>
+    <string name="show_ingr_from_db">View all ingriedients</string>
+
+    <string name="save">Edited!save it now!</string>
+
+
+
+</resources>
